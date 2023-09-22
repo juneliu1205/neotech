@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.neotech.review01.TaskOne.java&apos; to &apos;TaskOneCalculator.java&apos;&#x0A;- Original project: &apos;JavaReview0611&apos;&#x0A;- Original element: &apos;com.neotech.review01.TaskOne.java&apos;&#x0A;- Renamed element: &apos;com.neotech.review01.TaskOneCalculator.java&apos;" description="Rename compilation unit &apos;TaskOne.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.neotech.review01{TaskOne.java" name="TaskOneCalculator.java" references="false" stamp="1686502920945" version="1.0"/>
+</session>

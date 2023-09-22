@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;JaveTestCode&apos; to &apos;JavaReview5&apos;" description="Move &apos;JaveTestCode&apos; to &apos;JavaReview5&apos;" destination="/JavaReview5" element1="/Untitled/JaveTestCode" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1692405863253" updateReferences="true"/>
+</session>

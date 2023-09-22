@@ -1,0 +1,47 @@
+package com.neotech.utils;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+
+public class CommonMethods extends BaseClass {
+
+	/**
+	 * This method clears the textbox first, then sets it text
+	 * @param element
+	 * @param text
+	 */
+	public static void sendText(WebElement element, String text) {
+		element.clear();
+		element.sendKeys(text);
+	}
+	
+	/**
+	 * The method checks if a radio/check box is enabled, then clicks on the element matching the input value
+	 * @param elementList
+	 * @param value
+	 */
+			
+	public static void clickRadioOrCheckbox(List<WebElement> elementList, String value) {
+		for (WebElement el : elementList) {
+			String elemenValue = el.getAttribute("value").trim();
+			
+			if (elemenValue.equals(value) && el.isEnabled()){
+				el.click();
+				break;
+			}
+		}
+	}
+	/**
+	 * This method allows us to call Thread.sleep() for a certain of second
+	 * @param second
+	 */
+	public static void wait (int second) {
+		try {
+			Thread.sleep(second*1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+
+		}
+		}
+}
