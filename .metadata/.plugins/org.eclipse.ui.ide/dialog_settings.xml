@@ -28,6 +28,11 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/admin/eclipse-workspace/SeleniumReview5"/>
+			<item value="/Users/admin/SeleniumReview5/src/com/neotech/utils"/>
+			<item value="/Users/admin/SeleniumReview5/bin"/>
+			<item value="/Users/admin/SeleniumReview5/src/com/neotech/review04"/>
+			<item value="/Users/admin/eclipse-workspace/SeleniumReview/src/com/neotech/review04"/>
 			<item value="/Users/admin/eclipse-workspace/NeoTechProject/src/com"/>
 			<item value="/Users/admin/Downloads/Untitled"/>
 		</list>

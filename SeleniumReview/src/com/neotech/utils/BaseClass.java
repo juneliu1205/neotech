@@ -1,4 +1,6 @@
 package com.neotech.utils;
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -27,6 +29,7 @@ public class BaseClass {
 			throw new RuntimeException("Other browsers are NOT supported!!!");
 		}
 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Constants.IMPLICIT_WAIT_TIME));
 		driver.manage().window().maximize();
 		driver.get(ConfigsReader.getProperty("url"));
 	}

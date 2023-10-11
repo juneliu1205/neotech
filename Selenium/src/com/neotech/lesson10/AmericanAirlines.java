@@ -54,7 +54,7 @@ public class AmericanAirlines extends BaseClass {
 			driver.findElement(By.xpath("//div[@id=\"ui-datepicker-div\"]/div[2]/div/a")).click();
 			returnMonth = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
 		}
-		List<WebElement>rDays=driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody/tr/td"));
+		List<WebElement>rDays = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody/tr/td"));
 		for (WebElement rday : rDays) {
 			String rdayNum = rday.getText();
 			if (rdayNum.equals("20")) {
