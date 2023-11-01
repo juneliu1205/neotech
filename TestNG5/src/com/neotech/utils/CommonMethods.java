@@ -1,5 +1,7 @@
 package com.neotech.utils;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 import java.util.Set;
@@ -9,10 +11,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.common.io.Files;
 
 public class CommonMethods extends BaseClass {
 
@@ -323,7 +329,22 @@ public class CommonMethods extends BaseClass {
 		}
 	}
 	
-	
-	
+	/**
+	 * This method takes a screenshot using the provided fileName
+	 * 
+	 * @param fileName
+	 */
+	public static void takeScreenshot(String fileName) {
+		// Take screenshot
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		// this is the screenshot, but it is not saved anywhere
+		File sourceFile = ts.getScreenshotAs(OutputType.FILE);
+		try {
+			Files.copy(sourceFile, new File("screenshots/" + fileName + ".png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("Unable to save the screenshot!!!");
+		}
+	}
 	
 }

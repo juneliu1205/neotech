@@ -1,3 +1,4 @@
+Refactoring.savealleditors=true
 breadcrumb.org.eclipse.debug.ui.DebugPerspective=true
 content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
 content_assist_favorite_static_members=org.testng.Assert.*

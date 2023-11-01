@@ -43,6 +43,7 @@ public class AssertDemo extends CommonMethods{
 	//Assert.assertEquals(logo.isDisplayed(), true);
 	//Assert.assertEquals(logo.isDisplayed(), true, "Logo is not displayed!");
 	Assert.assertTrue(logo.isDisplayed());
+
 	
 	
 	}
